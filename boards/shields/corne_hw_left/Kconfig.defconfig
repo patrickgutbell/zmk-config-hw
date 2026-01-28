@@ -1,9 +1,18 @@
 if SHIELD_CORNE_HW_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Baikal"
+    default "Cornepat left"
+
+config ZMK_SPLIT
+	def_bool y
+
+config ZMK_SPLIT_BLE
+	def_bool y
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+	def_bool y
+
+config ZMK_USB
+	def_bool y
 
 endif

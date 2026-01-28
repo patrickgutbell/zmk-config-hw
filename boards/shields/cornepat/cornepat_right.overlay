@@ -16,12 +16,8 @@
 
 &kscan0 {
 
-    row-gpios
-            = <&pro_micro 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;                              
+   
+                                          
 
     col-gpios
         = <&pro_micro 6 GPIO_ACTIVE_HIGH>

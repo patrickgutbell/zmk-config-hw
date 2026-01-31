@@ -7,12 +7,10 @@
 #include "cornepat.dtsi"
 
 &kscan0 {
-    col-gpios
-        = <&pro_micro 21 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-        ;
+    col-gpios = <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Col 0 = P0.02 */
+                <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Col 1 = P1.15 */
+                <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Col 2 = P1.13 */
+                <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Col 3 = P1.11 */
+                <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Col 4 = P0.10 */
+                <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  /* Col 5 = P0.09 */        
 };

@@ -16,15 +16,13 @@
     col-offset = <6>;
 };
 
-&kscan0 {    
-    col-gpios
-        = <&pro_micro 6 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 11 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 0 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 24 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 22 GPIO_ACTIVE_HIGH>
-        ;
+  /* Cols: P1.06, P1.04, P0.11, P1.00, P0.24, P0.22 */
+        col-gpios = <&gpio1 6  GPIO_ACTIVE_HIGH>,
+                    <&gpio1 4  GPIO_ACTIVE_HIGH>,
+                    <&gpio0 11 GPIO_ACTIVE_HIGH>,
+                    <&gpio1 0  GPIO_ACTIVE_HIGH>,
+                    <&gpio0 24 GPIO_ACTIVE_HIGH>,
+                    <&gpio0 22 GPIO_ACTIVE_HIGH>;
 };
 
 / {

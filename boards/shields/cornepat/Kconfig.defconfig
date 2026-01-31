@@ -8,7 +8,17 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if SHIELD_CORNE_RIGHT
+
+config ZMK_SPLIT_ROLE_PERIPHERAL
+	def_bool y
+
+endif
+
 if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
+
+config ZMK_SPLIT_BLE
+	def_bool y
 
 config ZMK_SPLIT
     default y
